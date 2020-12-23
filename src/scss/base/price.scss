@@ -1,0 +1,108 @@
+.price {
+    background-color: #e7edf3;
+    padding: 137px 0 160px;
+
+    &__text {
+        margin-bottom: 50px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        padding: 57px 31px 48px;
+        border: 1px solid #ccd5df;
+        background-color: #ffffff;
+        text-align: center;
+        width: 391px;
+        border-radius: 5px;
+
+        &-title {
+            color: #818b95;
+            font-family: 'Lato', sans-serif;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 22px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__sum {
+        color: #ffbb42;
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        span {
+            vertical-align: super;
+            font-size: 30px;
+            margin-right: 5px;
+        }
+    }
+
+    &__comment {
+        color: #818b95;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-bottom: 33px;
+    }
+
+    &__list {
+        margin-bottom: 35px;
+
+        &-item {
+            padding: 15px 0;
+            border-top: 1px solid #e2e9f0;
+            color: #b5bbc1;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__button {
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        padding: 10px 21px;
+        border-radius: 3px;
+        background-color: $yellow;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #fcad24;
+        }
+    }
+
+    &__item.premium {
+        padding: 87px 31px 78px;
+        background-color: $blue;
+
+        h4 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        li {
+            color: #c2e1ff;
+        }
+    }
+}

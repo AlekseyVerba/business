@@ -1,0 +1,43 @@
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 0;
+        align-items: center;
+    }
+
+    &__burger {
+        display: none;
+
+        &-line {
+            height: 2px;
+            width: 30px;
+            background: rgb(146, 146, 146);
+
+            &+& {
+                margin-top: 7px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        li {
+            padding: 6px 21px;
+            color: #868686;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $yellow;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    }
+}

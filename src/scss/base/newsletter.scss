@@ -1,0 +1,158 @@
+.newsletter {
+    padding: 150px 0 57px;
+    border-bottom: 1px solid #e3e7ec;
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    form {
+        text-align: center;
+        color: #a9a9a9;
+        font-family: "Open Sans";
+        font-size: 13px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    input {
+        padding: 17px 20px 17px 44px;
+        margin-right: 10px;
+    }
+
+    &__name {
+        position: relative;
+
+        &::after {
+            content: "";
+            // display: block;
+            display: inline-block;
+            position: absolute;
+            width: 13px;
+            height: 15px;
+            background: url(../../images/icon/person.png) no-repeat;
+            left: 0;
+            z-index: 1000;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        input {
+            width: 308px;
+            height: 47px;
+            border: 1px solid #cbcbcb;
+            background-color: #ffffff;
+        }
+    }
+
+    &__email {
+        position: relative;
+
+        &::after {
+            content: "";
+            // display: block;
+            display: inline-block;
+            position: absolute;
+            width: 13px;
+            height: 15px;
+            background: url(../../images/icon/direct.png) no-repeat;
+            left: 0;
+            z-index: 1000;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        input {
+            width: 388px;
+            height: 47px;
+            border: 1px solid #cbcbcb;
+            background: #fff;
+        }
+    }
+
+    button {
+        height: 47px;
+        background: $yellow;
+        padding: 0 50px;
+        color: #ffffff;
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fcad24;
+        }
+    }
+
+    &__adress {
+        position: relative;
+        display: block;
+        height: 550px;
+        background: url(../../images/bg/world.jpg) center;
+
+        &-circle {
+            position: absolute;
+            width: 279px;
+            height: 279px;
+            border-radius: 100%;
+            background-color: #394b50;
+            z-index: 1000;
+            text-align: center;
+            top: 8%;
+            left: 38%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -38px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 10px;
+                border: 20px solid transparent;
+                /* Прозрачные границы */
+                border-top: 20px solid #394b50;
+            }
+        }
+
+        &-text {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-title {
+            color: #ffffff;
+            font-family: "Lato";
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        &-item {
+            color: #aeb7ba;
+            font-family: "Open Sans";
+            color: #aeb7ba;
+            font-weight: 400;
+            line-height: 24px;
+            font-size: 13px;
+            margin-bottom: 3px;
+
+            &:last-child {
+                color: #ffbb42;
+            }
+        }
+    }
+
+}

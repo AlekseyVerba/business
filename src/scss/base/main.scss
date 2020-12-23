@@ -1,0 +1,115 @@
+.main {
+    background-color: $blue;
+    text-align: center;
+    padding: 110px 0 350px;
+    position: relative;
+
+    &__title {
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: -0.88px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    form {
+        margin-top: 33px;
+    }
+
+    input {
+        width: 281px;
+        height: 46px;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        color: #a9a9a9;
+        font-family: "Open Sans";
+        color: black;
+        font-size: 13px;
+        font-weight: 400;
+        padding-left: 41px;
+        padding-right: 15px;
+    }
+
+    label {
+        position: relative;
+    }
+
+    &__name {
+        &::after {
+            content: "";
+            position: absolute;
+            background: black;
+            width: 16px;
+            height: 13px;
+            background: url(../../images/icon/person.png) no-repeat;
+            left: 10px;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__email {
+        &::after {
+            content: "";
+            position: absolute;
+            background: black;
+            width: 16px;
+            height: 13px;
+            background: url(../../images/icon/direct.png) no-repeat;
+            left: 10px;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__phone {
+        &::after {
+            content: "";
+            position: absolute;
+            background: black;
+            width: 16px;
+            height: 13px;
+            background: url(../../images/icon/phone.png) no-repeat;
+            left: 10px;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+    }
+
+    button {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        height: 46px;
+        border-radius: 3px;
+        border: none;
+        padding: 0 35px;
+        background-color: $yellow;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+            background: #fcad24;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

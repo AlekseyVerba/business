@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+@import "./help/vars";
+@import "./base/header.scss";
+@import "./base/main.scss";
+@import "./base/service.scss";
+@import "./base/us.scss";
+@import "./base/price.scss";
+@import "./base/work.scss";
+@import "./base/clients.scss";
+@import "./base/newsletter.scss";
+@import "./base/footer.scss";
+@import "./media/media.scss";
+
 *,
 *::before,
 *::after {
@@ -89,5 +102,6 @@ select {
 
 .container {
     max-width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
